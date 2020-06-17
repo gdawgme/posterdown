@@ -227,13 +227,13 @@ color: $if(body_textcol)$$body_textcol$$else$#000000$endif$;
 text-align: left;
 }
 .main {
-width: calc($if(poster_width)$$poster_width$$else$46in$endif$ * $if(main_width)$$main_width$$else$0.5$endif$);
+width: calc($if(poster_width)$$poster_width$$else$46in$endif$ * $if(main_width)$$main_width$$else$0.4$endif$);
 height: $if(poster_height)$$poster_height$$else$32in$endif$;
 position: absolute;
 $if(main_width)$
 margin-left: calc($if(poster_width)$$poster_width$$else$46in$endif$ * ((1 - $main_width$) / 2));
 $else$
-margin-left: calc($if(poster_width)$$poster_width$$else$46in$endif$ * 0.25);
+margin-left: calc($if(poster_width)$$poster_width$$else$46in$endif$ * 0.30);
 $endif$
 background-color: $if(primary_colour)$$primary_colour$$else$#0b4545$endif$;
 color: $if(main_textcol)$$main_textcol$$else$#FFFFFF90$endif$;
